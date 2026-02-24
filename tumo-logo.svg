@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+
+  <!-- TUMO Logo Mark — Three Triangles
+       Golden ratio applied to:
+       1. Sizes:     120.0 : 74.2 : 45.8  (each ÷φ)
+       2. Distances:  D1=76.2 : D2=47.1  (D1/D2 = φ)
+       φ = 1.618034
+       2 colors: #0047AB, #c4a35a -->
+
+  <!-- Large triangle — cobalt -->
+  <path d="M88.0,68.7 L148.0,172.6 L28.0,172.6 Z" fill="#0047AB"/>
+
+  <!-- Medium triangle — GOLD (middle) -->
+  <path d="M175.5,62.8 L175.4,137.0 L111.2,99.9 Z" fill="#c4a35a"/>
+
+  <!-- Small triangle — cobalt -->
+  <path d="M207.2,49.1 L192.6,92.5 L162.3,58.1 Z" fill="#0047AB"/>
+
+</svg>

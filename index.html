@@ -156,6 +156,7 @@
 }
 </script>
 
+<link rel="icon" type="image/svg+xml" href="tumo-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -205,8 +206,9 @@
   .nav-logo {
     font-size: 1.4rem; font-weight: 900; letter-spacing: 0.12em;
     color: var(--cobalt); text-decoration: none;
+    display: flex; align-items: center; gap: 0.5rem;
   }
-  .nav-logo span { color: var(--accent); }
+  .nav-logo-img { height: 32px; width: auto; display: block; }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a {
     font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
@@ -539,7 +541,7 @@
 <div class="accent-bar"></div>
 
 <nav>
-  <a href="#" class="nav-logo">TUMO</a>
+  <a href="#" class="nav-logo"><img src="tumo-logo.svg" alt="TUMO" class="nav-logo-img">TUMO</a>
   <button class="hamburger" aria-label="メニュー" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
