@@ -398,7 +398,12 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0,71,171,0.3);
   }
+  .contact-email { cursor: pointer; font-family: var(--font-main); letter-spacing: 0.02em; }
   .contact-email svg { width: 16px; height: 16px; fill: currentColor; }
+  .copy-msg {
+    font-size: 0.72rem; margin-left: 0.5rem; opacity: 0; transition: opacity 0.3s;
+    color: rgba(255,255,255,0.9); letter-spacing: 0.08em;
+  }
 
   /* ── Cobalt accent bar ── */
   .accent-bar {
@@ -549,7 +554,7 @@
 
 <section class="hero">
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="コーポレートサイト動画生成依頼.mp4" type="video/mp4">
+    <source src="hero-bg.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-tag">TUMO合同会社 — Technology × Consulting</div>
@@ -723,10 +728,11 @@
       <div class="contact-block">
         <h3 class="contact-heading">お問い合わせ</h3>
         <p class="contact-text">プロジェクトのご相談、お見積り、パートナーシップのご提案など、お気軽にお問い合わせください。</p>
-        <a href="mailto:eikichi.murakami@tumo-consulting.com" class="contact-email">
+        <button class="contact-email" onclick="navigator.clipboard.writeText('eikichi.murakami@tumo-consulting.com').then(()=>{this.querySelector('.copy-msg').style.opacity=1;setTimeout(()=>{this.querySelector('.copy-msg').style.opacity=0},2000)})">
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           eikichi.murakami@tumo-consulting.com
-        </a>
+          <span class="copy-msg">Copied!</span>
+        </button>
       </div>
     </div>
   </div>
